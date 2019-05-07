@@ -690,3 +690,9 @@ h1 span:nth-child(18) {
   }
 
 }
+
+@media (min-width: 1600px) {
+  #smokeCol {
+    margin-top: -400px;
+  }
+}
