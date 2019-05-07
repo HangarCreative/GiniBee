@@ -756,6 +756,34 @@ h1 span:nth-child(18) {
   }
 
   #bzzz{
+    height: 300px;
+  }
+
+  #logoCol {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  #smokeCol {
+    margin-top: -250px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+
+@media (min-width: 1200px) and (max-height: 650px){
+  #anim {
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+  }
+
+  #bzzz{
     height: 200px;
   }
 
@@ -774,6 +802,7 @@ h1 span:nth-child(18) {
     -moz-transform: scale(1);
   }
 }
+
 
 @media (min-width: 1400px) {
   #anim {
