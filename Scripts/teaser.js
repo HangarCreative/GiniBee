@@ -1,16 +1,4 @@
-document.body.classList.add('js-loading');
-var vid = document.getElementById("smoke");
 
-window.addEventListener("load", showPage);
-
-function showPage() {
-  document.body.classList.remove('js-loading');
-  setTimeout(function(){
-    vid.play();
-  }, 5000);
-}
-
-vid.playbackRate = 1.5;
 // var anim = document.getElementById("anim");
 
 // myFunction();
