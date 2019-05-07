@@ -279,17 +279,7 @@ h1 span {
   margin-top: 100px;
 }
 
-#info1 {
-  max-width: 100%;
-  height: 200px;
-}
-
-#info2 {
-  max-width: 100%;
-  height: 200px;
-}
-
-#info3 {
+#info1, #info2, #info3 {
   max-width: 100%;
   height: 200px;
 }
@@ -312,10 +302,11 @@ h1 span {
   -webkit-animation-timing-function: linear;
 }
 
-p {
+.infoText {
   color: white;
   /* margin-top: -5rem; */
   font-weight: lighter;
+  font-size: 0.9rem;
 }
 
 #bold {
@@ -326,17 +317,17 @@ p {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 200px;
   background-color: #191919;
   color: white;
   text-align: center;
   font-family: 'GiniFont';
   font-weight: lighter;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   letter-spacing: 0.2rem;
 }
 
 #MLogo {
+  margin-top: 50px;
   -ms-transform: scale(1);
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
@@ -348,9 +339,11 @@ p {
 }
 
 #csText {
+  color: white;
+  margin-top: 50px;
   display: inline-block;
   font-family: 'GiniFont';
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 /* -------------------------animation delays for SPIRIT IN A BOTTLE------------------------- */
@@ -491,26 +484,38 @@ h1 span:nth-child(18) {
 
 @media (min-width: 360px){
 
+  #info1, #info2, #info3 {
+    height: 270px;
+  }
+}
+
+@media (min-width: 375px){
+
   #anim {
-    position: relative;
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
     -moz-transform: scale(0.5);
   }
+}
 
-  #info1, #info2, #info3 {
-    height: 270px;
+@media (min-width: 400px){
+
+  #anim {
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
   }
 }
 
 @media (min-width: 768px){
 
   #anim {
-    transform: scale(0.75);
-    -webkit-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-    -moz-transform: scale(0.75);
+    transform: scale(0.65);
+    -webkit-transform: scale(0.65);
+    -ms-transform: scale(0.65);
+    -moz-transform: scale(0.65);
   }
 
   #animCol {
@@ -518,7 +523,7 @@ h1 span:nth-child(18) {
   }
 
   #smokeCol {
-    margin-top: -250px;
+    margin-top: -220px;
   }
 
   #info1, #info2, #info3 {
@@ -528,18 +533,67 @@ h1 span:nth-child(18) {
   h1 span {
     font-size: 4rem;
   }
+
+  .infoText {
+    font-size: 1rem;
+  }
+
+  #csText {
+    font-size: 3rem;
+  }
 }
 
 @media (min-width: 992px) {
 
-  html,body{
-    /* max-width: 100%;
-    overflow-x: hidden; */
-  }
-
   #giniLogo {
     margin-top: auto;
     margin-bottom: 0;
+  }
+
+  #anim {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+  }
+
+  #animCol {
+    margin-top: -50px;
+  }
+
+  #smokeCol {
+    margin-top: -270px;
+  }
+
+  #info1, #info2, #info3 {
+    height: 320px;
+  }
+
+  #csText {
+    font-size: 3.5rem;
+  }
+
+}
+
+@media (min-width: 1000px){
+  #anim {
+    transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+  }
+
+  h1 span {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #anim {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0.9);
   }
 
   #beeLogo {
@@ -559,29 +613,48 @@ h1 span:nth-child(18) {
     -webkit-animation-fill-mode: forwards;
   }
 
-  #anim {
-    transform: scale(0.80);
-    -webkit-transform: scale(0.80);
-    -moz-transform: scale(0.80);
-    -ms-transform: scale(0.80);
+  #animCol {
+    margin-top: -50px;
   }
 
-  #animCol {
-    margin-top: -100px;
+  #smokeCol {
+    margin-top: -280px;
+  }
+
+  h1 span {
+    font-size: 5rem;
+  }
+
+  #info {
+    margin-top: 230px;
   }
 
   #info1, #info2, #info3 {
-    height: 220px;
+    height: 230px;
+  }
+
+  #footer {
+    height: 300px;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  #MLogo {
+    margin-top: 50px;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
   }
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   #anim {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    -moz-transform: scale(1);
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -moz-transform: scale(0-9);
   }
 
   #animCol {
@@ -601,6 +674,15 @@ h1 span:nth-child(18) {
   }
 
   #info1, #info2, #info3 {
-    height: 270px;
+    height: 320px;
   }
+  
+  #MLogo {
+    margin-top: 50px;
+    -ms-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
 }

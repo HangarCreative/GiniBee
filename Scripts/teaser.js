@@ -17,7 +17,7 @@ vid.playbackRate = 1.5;
 // animateBee();
 // document.getElementsByTagName("BODY")[0].onresize = function(){myFunction()};
 
-function animateBee(){
+// function animateBee(){
   // if(screen.width < 992){
     // var element = document.getElementById("bzzz");
     // element.setAttribute("src","#");
@@ -31,7 +31,7 @@ function animateBee(){
     // beeDiv.id = "beeLogo";
     // bee.style.animation = "logoAnim 1.5s linear 2.5s forwards";
   // }
-}
+// }
 
 // function myFunction(){
 //   if(screen.width < 576){
