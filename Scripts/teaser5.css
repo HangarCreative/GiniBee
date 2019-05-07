@@ -78,8 +78,12 @@ body {
   overflow-x: hidden; */
 }
 
+#animCol {
+  margin-top: -30px;
+}
+
 #smokeCol {
-  margin-top: -50px;
+  margin-top: -80px;
 }
 
 #smokeHolder {
@@ -275,6 +279,33 @@ h1 span {
   animation: animate 1s linear forwards;
 }
 
+
+#buttonDown {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  background-color: #262626;
+  margin-top: -100px;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  font-weight: lighter;
+  animation-name: logoAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+  animation-delay: 10s;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: logoAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-delay: 10s;
+  -webkit-animation-timing-function: linear;
+}
+
+
 #info {
   margin-top: 100px;
 }
@@ -328,10 +359,12 @@ h1 span {
 
 #MLogo {
   margin-top: 50px;
-  -ms-transform: scale(1);
+  max-width: 100%;
+  height: 100px;
+  /* -ms-transform: scale(1);
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
-  transform: scale(1);
+  transform: scale(1); */
 }
 
 #comingSoon {
@@ -547,6 +580,15 @@ h1 span:nth-child(18) {
   }
 }
 
+@media (min-width: 768px) and (max-height: 768px){
+  #anim {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
+}
+
 @media (min-width: 992px) {
 
   #giniLogo {
@@ -579,16 +621,66 @@ h1 span:nth-child(18) {
 
 }
 
-@media (min-width: 1000px){
+@media (min-width: 992px) and (max-height: 768px){
   #anim {
-    transform: scale(0.85);
-    -webkit-transform: scale(0.85);
-    -ms-transform: scale(0.85);
-    -moz-transform: scale(0.85);
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
   }
+
+  #logoCol {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
+
+  #smokeCol {
+    margin-top: -200px;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
+}
+
+@media (min-width: 1000px){
 
   h1 span {
     font-size: 4rem;
+  }
+
+  #buttonDown {
+    margin-top: 0px;
+  }
+
+  #smokeCol {
+    margin-top: -320px;
+  }
+}
+
+@media (min-width: 1100px) and (max-height: 768px){
+  #anim {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
+
+  #logoCol {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+  }
+
+  #smokeCol {
+    margin-top: -250px;
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -moz-transform: scale(0.5);
   }
 }
 
@@ -630,7 +722,7 @@ h1 span:nth-child(18) {
   }
 
   #info {
-    margin-top: 230px;
+    margin-top: 130px;
   }
 
   #info1, #info2, #info3 {
@@ -645,12 +737,42 @@ h1 span:nth-child(18) {
   
   #MLogo {
     margin-top: 50px;
-    -ms-transform: scale(1.5);
+    max-width: 100%;
+    height: 150px;
+    /* -ms-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    transform: scale(1.5); */
   }
 
+}
+
+@media (min-width: 1200px) and (max-height: 768px){
+  #anim {
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+  }
+
+  #bzzz{
+    height: 200px;
+  }
+
+  #logoCol {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  #smokeCol {
+    margin-top: -250px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
 }
 
 @media (min-width: 1400px) {
@@ -674,7 +796,7 @@ h1 span:nth-child(18) {
   }
 
   #info {
-    margin-top: 230px;
+    margin-top: 130px;
   }
 
   #info1, #info2, #info3 {
@@ -683,16 +805,95 @@ h1 span:nth-child(18) {
   
   #MLogo {
     margin-top: 50px;
-    -ms-transform: scale(1.5);
+    /* -ms-transform: scale(1.5);
     -moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
-    transform: scale(1.5);
+    transform: scale(1.5); */
   }
 
 }
 
+@media (min-width: 1400px) and (max-height: 568px){
+  #anim {
+    transform: scale(0.6);
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+  }
+
+  #bzzz{
+    height: 200px;
+  }
+
+  #logoCol {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  #smokeCol {
+    margin-top: -250px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+}
+
+@media (min-width: 1400px) and (max-height: 800px){
+  #anim {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+  }
+
+  #bzzz{
+    height: 250px;
+  }
+
+  #smokeCol {
+    margin-top: -250px;
+  }
+}
+
 @media (min-width: 1600px) {
   #smokeCol {
-    margin-top: -400px;
+    margin-top: -360px;
+  }
+}
+
+@media (min-width: 1600px) and (max-height: 830px){
+  #anim {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+  }
+
+  #bzzz{
+    height: 250px;
+  }
+
+  #smokeCol {
+    margin-top: -350px;
+  }
+}
+
+@media (min-width: 1600px) and (max-height: 630px){
+  #anim {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+  }
+
+  #bzzz{
+    height: 250px;
+  }
+
+  #smokeCol {
+    margin-top: -250px;
   }
 }
