@@ -1,0 +1,624 @@
+@font-face {
+  font-family: 'GiniFont';
+  src: url('../Assets/optiagency-gothic-webfont.woff2') format('woff2'),
+       url('../Assets/optiagency-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html,body{
+  height:100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.flex-fill {
+  flex:1;
+}
+
+
+body {
+  /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
+  /* background: -webkit-linear-gradient(bottom, black 50%, #191919);
+  background: -moz-linear-gradient(bottom, black 50%,#191919);
+  background: -ms-linear-gradient(bottom, black 50%,#191919);
+  background: -o-linear-gradient(bottom, black 50%,#191919);
+  background: linear-gradient(bottom, black 50%,#191919); */
+  background-color: #262626;
+  background-attachment: fixed;
+}
+
+#ginLogo {
+  display: block;
+  max-width: 100%;
+  max-height: 100vh;
+  margin-top: 3rem;
+  opacity: 0;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  animation-name: logoAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: logoAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 2.5s;
+  -webkit-animation-timing-function: linear;
+}
+
+#beeLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -6;
+  margin-left: 0;
+  opacity: 0;
+}
+
+#info {
+  color: white;
+  margin-top: -5rem;
+}
+
+#honeycomb {
+  margin: 0 auto;
+}
+
+#infoTonic {
+  max-width: 80%;
+  height: auto;
+}
+
+#info1 {
+  margin-top: 15rem;
+}
+
+#info2 {
+  margin-top: 3.5rem;
+}
+
+#info3 {
+  margin-top: 6rem;
+}
+
+#footer {
+  font-family: 'GiniFont';
+  font-weight: lighter;
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #191919;
+  color: white;
+  text-align: center;
+}
+
+#MLogo {
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in {
+  animation-name: logoAnim;
+  animation-duration: 1.5s;
+  animation-fill-mode: backwards;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: logoAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+}
+
+/* premaknjeno iz leve za 550 in zgoraj za 50*/
+
+#anim {
+  /* margin-top: -8rem; */
+  margin-top: -2rem;
+  height: 5px;
+}
+
+#ginStd {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 75px;
+  will-change: transform, opacity;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  animation-name: ginStdAnim;
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: ginStdAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.8s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+#ginPrm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px;
+  will-change: transform, opacity;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  animation-name: ginPrmAnim;
+  animation-duration: 1.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: ginPrmAnim;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 0.8s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+
+#brinTop {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 130px;
+  will-change: transform, opacity;
+  -moz-transform: translate(-50%, -50%) ;
+  -ms-transform: translate(-50%, -50%) ;
+  -webkit-transform: translate(-50%, -50%) ;
+  transform: translate(-50%, -50%) ;
+  z-index: -3;
+  animation-name: brinTopAnim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: brinTopAnim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+#brinBot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 270px;
+  will-change: transform, opacity;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation-name: brinBotAnim;
+  animation-duration: 2s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: brinBotAnim;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 1.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+#tonic {
+  position: absolute;
+  will-change: transform, opacity;
+  top: 50%;
+  left: 50%;
+  margin-top: 100px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  z-index: -1;
+  animation-name: tonicAnim;
+  animation-duration: 2.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-out;
+    /* safari animation */
+  -webkit-animation-name: tonicAnim;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: ease-out;
+}
+
+@keyframes tonicAnim {
+  0% {opacity: 0; transform: translate(-50%, -50%) scale(0.8);
+    -ms-transform: translate(-50%, -50%) scale(0.8);
+    -moz-transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {opacity: 1;}
+  100% {transform: translate(-50%, -50%) scale(1);
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -ms-transform: translate(-50%, -50%) scale(1);
+  }
+}
+  /* safari animation */
+@-webkit-keyframes tonicAnim {
+  0% {opacity: 0;-webkit-transform: translate(-50%, -50%) scale(0.8);}
+  50% {opacity: 1;}
+  100% {-webkit-transform: translate(-50%, -50%) scale(1);}
+}
+
+@keyframes ginPrmAnim {
+  0% {opacity: 0; margin-left: -125px;}
+  50% {opacity: 1;}
+  100% {margin-left: -75px;}
+}
+
+@keyframes ginStdAnim {
+  0% {opacity: 0; margin-left: 125px;}
+  50% {opacity: 1;}
+  100% {margin-left: 75px;}
+}
+
+@keyframes brinBotAnim {
+  0% {opacity: 0; margin-top: 320px;}
+  50% {opacity: 1;}
+  100% {margin-top: 270px;}
+}
+
+@keyframes brinTopAnim {
+  0% {opacity: 0; margin-top: 180px;}
+  50% {opacity: 1;}
+  100% {margin-top: 130px;}
+}
+
+@keyframes logoAnim {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Smoke effect */
+
+/* traja 7s */
+
+#smokeHolder{
+  width: 100%;
+  overflow:hidden;
+  display:block;
+  height: 98%;
+}
+
+#smoke {
+  position: absolute;
+  margin-top: -2%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -7;
+  opacity: 0;
+  animation-name: startVid, endVid;
+  animation-duration: 0.5s, 0.5s;
+  animation-timing-function: linear, linear;
+  animation-delay: 5s, 9.5s;
+  animation-fill-mode: forwards, forwards;
+  /* safari animation */
+  -webkit-animation-name: startVid, endVid;
+  -webkit-animation-duration: 0.5s, 0.5s;
+  -webkit-animation-timing-function: linear, linear;
+  -webkit-animation-delay: 5s, 9.5s;
+  -webkit-animation-fill-mode: forwards, forwards;
+}
+
+@keyframes endVid {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
+@keyframes startVid {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.space {
+  width: 20px;
+}
+
+#smokeAnim {
+  margin-bottom: auto;
+  margin-top: 2rem;
+  /* margin-top: 15rem; */
+}
+
+h1 {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  -ms-transform: scale(1) translate(-50%, -50%);
+  -moz-transform: scale(1) translate(-50%, -50%);
+  -webkit-transform: scale(1) translate(-50%, -50%);
+  transform: scale(1) translate(-50%, -50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  color: rgb(158, 158, 158);
+  font-size: 2rem;
+  font-family: GiniFont;
+  font-weight: lighter;
+  text-align: center;
+}
+
+h1 span {
+  margin: 0 -4px;
+  will-change: transform, opacity;
+  opacity: 0;
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+
+@keyframes animate {
+  0% {opacity: 0; transform: rotateY(90deg);}
+  100% {opacity: 1; transform: rotateY(0deg);}
+}
+@-webkit-keyframes animate {
+  0% {opacity: 0; -webkit-transform: rotateY(90deg);}
+  100% {opacity: 1; -webkit-transform: rotateY(0deg);}
+}
+@-moz-keyframes animate {
+  0% {opacity: 0; -moz-transform: rotateY(90deg);}
+  100% {opacity: 1; -moz-transform: rotateY(0deg);}
+}
+@-ms-keyframes animate {
+  0% {opacity: 0; -ms-transform: rotateY(90deg);}
+  100% {opacity: 1; -ms-transform: rotateY(0deg);}
+}
+
+h1 span:nth-child(1) {
+  animation-delay: 5.3s;
+}
+h1 span:nth-child(2) {
+  animation-delay: 5.45s;
+}
+h1 span:nth-child(3) {
+  animation-delay: 5.6s;
+}
+h1 span:nth-child(4) {
+  animation-delay: 5.75s;
+}
+h1 span:nth-child(5) {
+  animation-delay: 5.9s;
+}
+h1 span:nth-child(6) {
+  animation-delay: 6.1s;
+}
+h1 span:nth-child(8) {
+  animation-delay: 6.3s;
+}
+h1 span:nth-child(9) {
+  animation-delay: 6.45s;
+}
+h1 span:nth-child(11) {
+  animation-delay: 6.6s;
+}
+h1 span:nth-child(13) {
+  animation-delay: 6.85s;
+}
+h1 span:nth-child(14) {
+  animation-delay: 7.0s;
+}
+h1 span:nth-child(15) {
+  animation-delay: 7.1s;
+}
+h1 span:nth-child(16) {
+  animation-delay: 7.3s;
+}
+h1 span:nth-child(17) {
+  animation-delay: 7.4s;
+}
+h1 span:nth-child(18) {
+  animation-delay: 7.5s;
+}
+
+@media (min-width: 410px) {
+ h1 {
+  font-size: 2.8rem;
+ }
+
+ h1 span {
+  margin: 0 -6px;
+ }
+}
+
+@media (max-width: 991px){
+  #animCol {
+    margin: 12rem 0 5rem 0;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #footer {
+    font-size: 1.2rem;
+  }
+
+  #anim {
+    margin-top: 12rem;
+  }
+
+  #ginLogo {
+    margin-bottom: 3rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /* #anim {
+    margin: -5rem auto 0 auto;
+    transform: scale(1);
+  }
+
+  #smokeAnim {
+    margin-top: 10rem;
+  }
+
+  #ginLogo {
+    margin: 1rem auto 0 auto;
+    transform: scale(1.15);
+  }
+  */
+
+  h1 {
+    top: 50%;
+    font-size: 5rem;
+  }
+
+  #anim {
+    margin-top: 15rem;
+    -ms-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+
+  #info {
+    margin-top: 1rem;
+  }
+
+  #infoTonic {
+    max-width: 244px;
+  }
+
+  #info3 {
+    margin-top: 15.5rem;
+  }
+
+  #smokeAnim {
+    margin-top: 3rem;
+    /* margin-top: 15rem; */
+  }
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #anim {
+    margin-top: 10rem;
+    -ms-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+
+  #smokeAnim {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #ginLogo {
+    margin: 8rem auto 0 auto;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  h1 {
+    top: 45%;
+  }
+
+  body {
+    /* background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(black), to(white)); */
+    /* background: -webkit-linear-gradient(left, black 50%, #191919);
+    background: -moz-linear-gradient(left, black 50%,#191919);
+    background: -ms-linear-gradient(left, black 50%,#191919);
+    background: -o-linear-gradient(left, black 50%,#191919);
+    background: linear-gradient(left, black 50%,#191919); */
+  }
+
+  #beeLogo {
+
+    margin-left: -18%;
+  }
+
+  #MLogo {
+    -moz-transform: scale(1) translateY(20%);
+    -ms-transform: scale(1) translateY(20%);
+    -webkit-transform: scale(1) translateY(20%);
+    transform: scale(1) translateY(20%);
+  }
+
+  #info {
+    margin-top: 5rem;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  #anim {
+    margin-top: 30rem;
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  #smokeAnim {
+    margin-top: -18rem;
+  }
+
+  #ginLogo {
+    margin: 8rem auto 0 auto;
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  h1 {
+    top: 45%;
+  }
+
+  #infoTonic {
+    max-width: 300px;
+  }
+
+  #info3 {
+    margin-top: 12.5rem;
+  }
+}
