@@ -489,7 +489,7 @@ h1 span:nth-child(18) {
 @media (min-width: 360px){
 
   #info1, #info2, #info3 {
-    height: 270px;
+    height: 200px;
   }
 }
 
@@ -666,7 +666,7 @@ h1 span:nth-child(18) {
   }
 
   #smokeCol {
-    margin-top: -280px;
+    margin-top: -350px;
   }
 
   h1 span {
