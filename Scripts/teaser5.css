@@ -290,7 +290,7 @@ h1 span {
   margin-top: -100px;
   border: none;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: lighter;
   animation-name: logoAnim;
   animation-duration: 1.5s;
@@ -653,6 +653,7 @@ h1 span:nth-child(18) {
 
   #buttonDown {
     margin-top: 0px;
+    font-size: 3rem;
   }
 
   #smokeCol {
