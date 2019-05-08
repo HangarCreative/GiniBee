@@ -454,6 +454,7 @@ h1 span {
 #formSmokeDiv{
   margin-top: -5%;
   margin-bottom: -5%;
+  z-index: -1;
 }
 
 #formSmoke{
