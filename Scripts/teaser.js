@@ -71,6 +71,7 @@ var animateHTML = function() {
   var windowHeight;
   function init() {
     elems = document.querySelectorAll('.hidden');
+    smoke = document.getElementById("formSmoke");
     windowHeight = window.innerHeight;
     addEventHandlers();
     checkPosition();
@@ -89,6 +90,15 @@ var animateHTML = function() {
         );
       }
     }
+    var positionFromTop = smoke.getBoundingClientRect().top;
+      if (positionFromTop - windowHeight <= 0) {
+        smoke.className = smoke.className.replace(
+          'hidden',
+          'fade-in'
+        );
+        smoke.autoplay = true;
+        smoke.playbackRate = 1.5;
+      }
   }
   return {
     init: init
