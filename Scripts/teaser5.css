@@ -332,6 +332,10 @@ h1 span {
   opacity: 0;
 }
 
+.hidden2 {
+  opacity: 0;
+}
+
 .fade-in {
   animation-name: logoAnim;
   animation-duration: 1.5s;
@@ -343,6 +347,20 @@ h1 span {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+}
+
+.fade-in2 {
+  animation-name: logoAnim;
+  animation-duration: 2.5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1.5s;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: logoAnim;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-delay: 1.5s;
   -webkit-animation-timing-function: linear;
 }
 
@@ -429,8 +447,25 @@ h1 span {
   max-width: 100%;
   height: 50px;
   margin-bottom: -50px;
-
+  /* -webkit-mask-image: url("Assets/gradientV2.png"); */
 }
+
+/* .mask {
+  mask-image: linear-gradient(to right, transparent 25%, black 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 25%, black 100%);
+  z-index: 2;
+  mask-position: 0 0;
+  -webkit-mask-position: 0 0;
+  animation-name: giniFade;
+  animation-duration: 2.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+    /* safari animation */
+  -webkit-animation-name: giniFade;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: linear;
+} */
 
 /* #formLogo::before {
   content: '';
@@ -459,7 +494,21 @@ h1 span {
 
 #formSmoke{
   margin-top: -3%;
+  /* background-color: red;
+  mix-blend-mode: color; */
 }
+
+/* #formSmoke::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, red, purple);
+  mix-blend-mode: color;
+  pointer-events: none;
+} */
 
 #question {
   height: 150px;
@@ -607,6 +656,15 @@ h1 span:nth-child(18) {
 @keyframes logoAnim {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+@keyframes giniFade {
+  from { mask-position: 10px 0, center; }
+  to { mask-position: 130px 0, center;}
+}
+@-webkit-keyframes giniFade {
+  from { -webkit-mask-position: 10px 0, center; }
+  to { -webkit-mask-position: 130px 0, center;}
 }
 
 /* ------------------------------------------------------------ */

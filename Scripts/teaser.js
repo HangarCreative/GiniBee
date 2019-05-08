@@ -72,6 +72,7 @@ var animateHTML = function() {
   function init() {
     elems = document.querySelectorAll('.hidden');
     smoke = document.getElementById("formSmoke");
+    logo = document.getElementById("formLogo");
     windowHeight = window.innerHeight;
     addEventHandlers();
     checkPosition();
@@ -98,6 +99,13 @@ var animateHTML = function() {
         );
         smoke.autoplay = true;
         smoke.playbackRate = 1.5;
+      }
+      var positionFromTop = logo.getBoundingClientRect().top;
+      if (positionFromTop - windowHeight <= 0) {
+        logo.className = logo.className.replace(
+          'hidden2',
+          'fade-in2'
+        );
       }
   }
   return {
