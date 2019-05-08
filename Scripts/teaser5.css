@@ -238,13 +238,13 @@ body {
   animation-duration: 1.5s;
   animation-delay: 0.8s;
   animation-fill-mode: backwards;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
     /* safari animation */
   -webkit-animation-name: ginPrmAnim;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 0.8s;
   -webkit-animation-fill-mode: backwards;
-  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
 }
 
 #bee1 {
@@ -261,18 +261,19 @@ body {
   height: 50px;
   /* animation */
   /* will-change: opacity; */
-  animation-name: bee1Anim;
-  animation-duration: 1s;
+  animation-name: bee11Anim, bee12Anim;
+  animation-duration: 1.5s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1), cubic-bezier(0.3, 0.27, 0.07, 1);
     /* safari animation */
-  -webkit-animation-name: bee1Anim;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-name: bee11Anim, bee12Anim;
+  -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 2s;
   -webkit-animation-fill-mode: backwards;
-  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1), cubic-bezier(0.3, 0.27, 0.07, 1);
 }
+
 
 #bee2 {
   position: absolute;
@@ -288,17 +289,17 @@ body {
   height: 50px;
   /* animation */
   /* will-change: opacity; */
-  animation-name: bee2Anim;
-  animation-duration: 1s;
+  animation-name: bee21Anim, bee22Anim;
+  animation-duration: 1.5s;
   animation-delay: 2.1s;
   animation-fill-mode: backwards;
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.76, 0.46, 0.55, 0.97), cubic-bezier( 0.28, -0.03, -0.23, 0.98);
     /* safari animation */
-  -webkit-animation-name: bee2Anim;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-name: bee21Anim, bee22Anim;
+  -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 2.1s;
   -webkit-animation-fill-mode: backwards;
-  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: cubic-bezier(0.76, 0.46, 0.55, 0.97), cubic-bezier( 0.28, -0.03, -0.23, 0.98);
 }
 
 .space {
@@ -570,7 +571,7 @@ h1 span {
 
 #formText {
   color: white;
-  margin-top: 50px;
+  margin-top: 0px;
   display: inline-block;
   font-size: 1.5rem;
 }
@@ -721,9 +722,8 @@ h1 span:nth-child(18) {
   to { -webkit-mask-position: 130px 0, center;}
 }
 
-@keyframes bee1Anim{
+@keyframes bee11Anim{
   0% {
-    margin-top: 50px;
     margin-left: -220px;
     opacity: 0;
   }
@@ -731,13 +731,21 @@ h1 span:nth-child(18) {
     opacity: 1;
   }
   100% {
-    margin-top: -240px;
     margin-left: 120px;
   }
 }
-@keyframes bee2Anim{
+
+@keyframes bee12Anim{
   0% {
-    margin-top: 300px;
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: -240px;
+  }
+}
+
+@keyframes bee21Anim{
+  0% {
     margin-left: 220px;
     opacity: 0;
   }
@@ -745,8 +753,16 @@ h1 span:nth-child(18) {
     opacity: 1;
   }
   100% {
-    margin-top: 200px;
     margin-left: -150px;
+  }
+}
+
+@keyframes bee22Anim{
+  0% {
+    margin-top: 300px;
+  }
+  100% {
+    margin-top: 200px;
   }
 }
 
@@ -756,6 +772,11 @@ h1 span:nth-child(18) {
 
   #info1, #info2, #info3 {
     height: 200px;
+  }
+
+  #formText {
+    margin-top: 50px;
+    font-size: 1.5rem;
   }
 }
 
