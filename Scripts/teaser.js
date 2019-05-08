@@ -1,9 +1,12 @@
 
 // var anim = document.getElementById("anim");
+var button1 = document.getElementById("buttonDown2");
+var button2 = document.getElementById("buttonDown3");
 
+buttonFunc();
 // myFunction();
 // animateBee();
-// document.getElementsByTagName("BODY")[0].onresize = function(){myFunction()};
+document.getElementsByTagName("BODY")[0].onresize = function(){buttonFunc()};
 
 // function animateBee(){
   // if(screen.width < 992){
@@ -26,6 +29,20 @@
 //     anim.style.transform = "scale(" + (screen.width/800) + ")";
 //   }
 // }
+
+function buttonFunc(){
+  if(screen.width > 767){
+    button1.disabled = true;
+    button2.disabled = true;
+    button1.style.opacity = "0";
+    button2.style.opacity = "0";
+  }else{
+    button1.disabled = false;
+    button2.disabled = false;
+    button1.style.opacity = "1";
+    button2.style.opacity = "1";
+  }
+}
 window.smoothScroll = function(target) {
   var scrollContainer = target;
   do { //find scroll container
@@ -43,7 +60,7 @@ window.smoothScroll = function(target) {
   scroll = function(c, a, b, i) {
       i++; if (i > 30) return;
       c.scrollTop = a + (b - a) / 30 * i;
-      setTimeout(function(){ scroll(c, a, b, i); }, 15);
+      setTimeout(function(){ scroll(c, a, b, i); }, 25);
   }
   // start scrolling
   scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
