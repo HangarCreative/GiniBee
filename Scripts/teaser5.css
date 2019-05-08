@@ -460,7 +460,7 @@ h1 span {
   animation-duration: 2.5s;
   animation-fill-mode: backwards;
   animation-timing-function: linear;
-    /* safari animation */
+  safari animation
   -webkit-animation-name: giniFade;
   -webkit-animation-duration: 2.5s;
   -webkit-animation-fill-mode: backwards;
