@@ -290,8 +290,6 @@ h1 span {
   margin-top: -100px;
   border: none;
   color: white;
-  font-size: 2rem;
-  font-weight: lighter;
   animation-name: logoAnim;
   animation-duration: 1.5s;
   animation-fill-mode: backwards;
@@ -303,6 +301,10 @@ h1 span {
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-delay: 10s;
   -webkit-animation-timing-function: linear;
+}
+
+#buttonImage{
+  height: 25px;
 }
 
 
@@ -578,6 +580,10 @@ h1 span:nth-child(18) {
   #csText {
     font-size: 3rem;
   }
+
+  #buttonImage{
+    height: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-height: 768px){
@@ -651,9 +657,8 @@ h1 span:nth-child(18) {
     font-size: 4rem;
   }
 
-  #buttonDown {
-    margin-top: 0px;
-    font-size: 3rem;
+  #buttonImage{
+    height: 50px;
   }
 
   #smokeCol {
