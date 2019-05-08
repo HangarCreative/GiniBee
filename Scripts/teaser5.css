@@ -293,13 +293,13 @@ body {
   animation-duration: 1.5s;
   animation-delay: 2.1s;
   animation-fill-mode: backwards;
-  animation-timing-function: cubic-bezier(0.76, 0.46, 0.55, 0.97), cubic-bezier( 0.28, -0.03, -0.23, 0.98);
+  animation-timing-function: cubic-bezier(0.76, 0.46, 0.55, 0.97), cubic-bezier( 0.28, 0.73, 0.93, 0.98);
     /* safari animation */
   -webkit-animation-name: bee21Anim, bee22Anim;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 2.1s;
   -webkit-animation-fill-mode: backwards;
-  -webkit-animation-timing-function: cubic-bezier(0.76, 0.46, 0.55, 0.97), cubic-bezier( 0.28, -0.03, -0.23, 0.98);
+  -webkit-animation-timing-function: cubic-bezier(0.76, 0.46, 0.55, 0.97), cubic-bezier( 0.28, 0.73, 0.93, 0.98);
 }
 
 .space {
