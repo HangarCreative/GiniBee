@@ -120,29 +120,31 @@
             <!-- <?php include('Scripts/form.php'); ?> value="<?= $name ?>"  value="<?= $email ?>"  value="<?= $phone ?>" value="<?= $company ?>" value="<?= $message ?>" -->
             <form id="obrazec">
                 <div class="form-group">
-                  <label for="formName">Ime</label>
+                  <label for="formName">Ime*</label>
                   <input type="text" name="name" class="form-control" id="formNameIn" placeholder="Janez Novak">
                   <span class="error"><?= $name_error ?></span>
                 </div>
                 <div class="form-group">
-                  <label for="fromMail">Email</label>
-                  <input type="text" name="email"  class="form-control" id="formEmailIn" placeholder="example@email.com">
+                  <label for="fromMail">Email*</label>
+                  <input type="text" name="email"  class="form-control" id="formEmailIn" placeholder="primer@email.com">
                   <span class="error"><?= $email_error ?></span>
                 </div>
                 <div class="form-group">
-                  <label for="formPhone">Telefon</label>
+                  <label for="formPhone">Telefon*</label>
                   <input type="text" name="phone" class="form-control" id="formPhoneIn" placeholder="041 567 891">
                   <span class="error"><?= $phone_error ?></span>
                 </div>
                 <div class="form-group">
                   <label for="formCompany">Podjete</label>
-                  <input type="text" name="company" class="form-control" id="formCompanyIn" placeholder="">
+                  <input type="text" name="company" class="form-control" id="formCompanyIn" placeholder="Ime podjetja">
                 </div>
                 <div class="form-group">
                   <label for="formMessage">Sporočilo</label>
                   <textarea type="text" name="message" class="form-control" id="formMessageIn" placeholder="Tukaj napišeste sporočilo..."></textarea>
                 </div>
+                <p><label for="formInfo">Okenca z * so obvezna</label></p>
                 <button id="formSubmit" name="submit" type="submit" class="btn btn-danger">Pošlji</button>
+                <span class="success"><?= $success ?></span>
               </form>
         </div>
         <div class="col-12 col-md-5 text-center order-1 order-md-2 hidden">
