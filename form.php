@@ -1,8 +1,8 @@
 <?php
-
+ini_set('display_errors', 1);
 //define variable and set to empty values
-$name_error = $email_error = $phone_error = "";
-$name = $email = $phone = $company = $message =  "";
+$name_error = $email_error = $phone_error = $success = "";
+$name = $email = $phone = $company = $message = $success =  "";
 
 //dorm is submitted with POST method
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -15,14 +15,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $name_error = "Samo črke in presledki so dovoljeni";
         }
     }
-    
+
     if(empty($_POST["email"])){
-        $email_error = "Email je obvezno";
+        $email_error = "Email je obvezen";
     } else {
         $email = test_input($_POST["email"]);
         //check if email only contains letters and whitespace
-        if(!preg_match($email, FILTER_VALIDATE_EMAIL)) {
-            $email_error = "Nepravilen format emaila";
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $email_error = "Nepravilen email";
         }
     }
     
@@ -48,26 +48,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $message = test_input($_POST["message"]);
     }
 
-    if($name_error == "" and $email_error == "" and $phone_error == ""){
+    if($name_error == '' and $email_error == '' and $phone_error == ''){
         $message_body = "";
         unset($_POST["submit"]);
         foreach($_POST as $key => $value){
-            $message_body = "$key: $value\n";
+            $message_body .= "$key: $value\n";
         }
 
-        $to = "alen2herceg@gmail.com";
-        $subject = "Kontaktni obrazec objava";
-        if(mail($to, $subject, $message_body)){
+        $to = 'alen2herceg@gmail.com';
+        $subject = 'Kontaktni obrazec sporočilo';
+        $header = "FROM: $email";
+        if(mail($to, $subject, $message_body, $header)){
             $success = "Sporočilo poslano!";
             $name = $email = $phone = $company = $message = "";
         }
     }
 
-    function test_input($data){
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        return $data;
-    }
 }
-?>
+
+function test_input($data){
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
