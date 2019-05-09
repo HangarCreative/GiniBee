@@ -1,7 +1,7 @@
 <?php
 ini_set('display_errors', 1);
 //define variable and set to empty values
-$name_error = $email_error = $phone_error = $success = "";
+$name_error = $email_error = $phone_error = $message_error = $success = "";
 $name = $email = $phone = $company = $message = $success =  "";
 
 //dorm is submitted with POST method
@@ -43,12 +43,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     if(empty($_POST["message"])){
-        $message = "";
+        $message_error = "Sporočilo je prazno";
     } else {
         $message = test_input($_POST["message"]);
     }
 
-    if($name_error == '' and $email_error == '' and $phone_error == ''){
+    if($name_error == '' and $email_error == '' and $phone_error == '' and $message_error == ''){
         $message_body = "";
         unset($_POST["submit"]);
 

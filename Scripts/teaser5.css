@@ -29,7 +29,7 @@ body {
   background: -ms-linear-gradient(bottom, black 50%,#191919);
   background: -o-linear-gradient(bottom, black 50%,#191919);
   background: linear-gradient(bottom, black 50%,#191919); */
-  background-color: #262626;
+  background-color: #191919;
   background-attachment: fixed;
 }
 
@@ -341,7 +341,7 @@ h1 span {
   bottom: 0;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
-  background-color: #262626;
+  background-color: #191919;
   margin-top: -100px;
   border: none;
   color: white;
@@ -364,7 +364,7 @@ h1 span {
   bottom: -5%;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
-  background-color: #262626;
+  background-color: #191919;
   margin-top: 0;
   border: none;
 }
@@ -434,7 +434,7 @@ h1 span {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #191919;
+  background-color: #262626;
   color: white;
   text-align: center;
   font-family: 'GiniFont';
@@ -459,12 +459,12 @@ h1 span {
 }
 
 #comingSoon {
-  height: 200px;
+  height: 100px;
 }
 
 #csText {
   color: white;
-  margin-top: 50px;
+  margin-top: 0px;
   display: inline-block;
   font-family: 'GiniFont';
   font-size: 2.5rem;
@@ -492,12 +492,13 @@ h1 span {
 }
 
 #formLogoHolder{
-  height: 70px;
+  height: 130px;
 }
 
 #formLogo {
   max-width: 100%;
   height: 50px;
+  margin-top: 50px;
   /* position: absolute;
   top: 45%;
   left: 50%;
@@ -826,9 +827,9 @@ h1 span:nth-child(18) {
 
 @media (min-width: 570px){
 
-  #formLogoHolder{
+  /* #formLogoHolder{
     height: 80px;
-  }
+  } */
   #formLogo {
     max-width: 100%;
     height: 70px;
@@ -880,9 +881,9 @@ h1 span:nth-child(18) {
     margin-top: 20px;
   }
 
-  #formLogoHolder{
+  /* #formLogoHolder{
     height: 100px;
-  }
+  } */
 
   #formLogo {
     max-width: 100%;
@@ -943,7 +944,12 @@ h1 span:nth-child(18) {
     height: 320px;
   }
 
+  #comingSoon {
+    height: 200px;
+  }
+
   #csText {
+    margin-top: 50px;
     font-size: 3.5rem;
   }
 
@@ -951,9 +957,9 @@ h1 span:nth-child(18) {
     font-size: 2.5rem;
   }
 
-  #formLogoHolder{
+  /* #formLogoHolder{
     height: 120px;
-  }
+  } */
 
   #formLogo {
     max-width: 100%;
@@ -1101,7 +1107,7 @@ h1 span:nth-child(18) {
   }
 
   #footer {
-    height: 300px;
+    height: 330px;
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
   }
