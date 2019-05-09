@@ -114,6 +114,63 @@ var animateHTML = function() {
 };
 animateHTML().init();
 
+document.body.classList.add('js-loading');
+var vid = document.getElementById("smoke");
+vid.playbackRate = 1.5;
+
+window.addEventListener("load", showPage);
+
+function showPage() {
+document.body.classList.remove('js-loading');
+setTimeout(function(){
+    vid.play();
+  }, 5000);
+}
+
+
+// --------------------------------------------------------form function-------------------------------------------------
+$(function() {
+  // Get the form.
+  var form = $('#obrazec');
+  // Get the messages div.
+  var formMessages = $('#successMessage');
+  // Set up an event listener for the contact form.
+  $(form).submit(function(event) {
+    // Stop the browser from submitting the form.
+    event.preventDefault();
+    // Serialize the form data.
+    var formData = $(form).serialize();
+    // Submit the form using AJAX.
+    $.ajax({
+      type: 'POST',
+      url: $(form).attr('action'),
+      data: formData
+    }).done(function(response) {
+        // Make sure that the formMessages div has the 'success' class.
+        $(successMessage).removeClass('error');
+        $(successMessage).addClass('success');
+        // Set the message text.
+        $(successMessage).text(response);
+        // Clear the form.
+        $('#formName').val('');
+        $('#formEmail').val('');
+        $('#formPhone').val('');
+        $('#formCompany').val('');
+        $('#formMessage').val('');
+      }).fail(function(data) {
+        // Make sure that the successMessage div has the 'error' class.
+        $(successMessage).removeClass('success');
+        $(successMessage).addClass('error');
+        // Set the message text.
+        if (data.responseText !== '') {
+            $(successMessage).text(data.responseText);
+        } else {
+            $(successMessage).text('Oops! An error occured and your message could not be sent.');
+        }
+    });
+  });
+});
+
 // window.onload = setTimeout(function(){
 //     vid.play();
 //   }, 5000);

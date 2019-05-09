@@ -51,17 +51,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if($name_error == '' and $email_error == '' and $phone_error == ''){
         $message_body = "";
         unset($_POST["submit"]);
-        foreach($_POST as $key => $value){
-            $message_body .= "$key: $value\n";
-        }
+
+        $message_body = "Ime: $name\n";
+        $message_body .= "Email: $email\n\n";
+        $message_body .= "Telefonska št.: $phone\n\n";
+        $message_body .= "Podjetje: $company\n\n";
+        $message_body .= "Sporočilo: \n$message\n";
 
         $to = 'alen2herceg@gmail.com';
-        $subject = 'Kontaktni obrazec sporočilo';
-        $header = "FROM: $email";
+        $subject = "Novi kontakt od $name";
+        $header = "FROM: $name <$email>";
         if(mail($to, $subject, $message_body, $header)){
-            $success = "Sporočilo poslano!";
             $name = $email = $phone = $company = $message = "";
+            http_response_code(200);
+            echo "Sporočilo poslano!";
         }
+    }else{
+        http_response_code(400);
+        echo "Nepravilni podatki. Prosim preverite jih.";
     }
 
 }

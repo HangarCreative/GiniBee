@@ -265,13 +265,13 @@ body {
   animation-duration: 1.5s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
-  animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1), cubic-bezier(0.3, 0.27, 0.07, 1);
+  animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1), cubic-bezier(0.33, 1.4, 0.45, 0.63);
     /* safari animation */
   -webkit-animation-name: bee11Anim, bee12Anim;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 2s;
   -webkit-animation-fill-mode: backwards;
-  -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1), cubic-bezier(0.3, 0.27, 0.07, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1), cubic-bezier(0.33, 1.4, 0.45, 0.63);
 }
 
 
@@ -584,12 +584,14 @@ h1 span {
 
 .error {
   color: red;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .success {
   color: green;
   font-weight: bold;
-  
+  margin-left: 3rem;
 }
 
 
