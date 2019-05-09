@@ -71,7 +71,7 @@ var animateHTML = function() {
   var windowHeight;
   function init() {
     elems = document.querySelectorAll('.hidden');
-    smoke = document.getElementById("formSmoke");
+    // smoke = document.getElementById("formSmoke");
     logo = document.getElementById("formLogo");
     windowHeight = window.innerHeight;
     addEventHandlers();
@@ -91,15 +91,15 @@ var animateHTML = function() {
         );
       }
     }
-    var positionFromTop = smoke.getBoundingClientRect().top;
-      if (positionFromTop - windowHeight <= 0) {
-        smoke.className = smoke.className.replace(
-          'hidden',
-          'fade-in'
-        );
-        smoke.autoplay = true;
-        smoke.playbackRate = 1.5;
-      }
+    // var positionFromTop = smoke.getBoundingClientRect().top;
+    //   if (positionFromTop - windowHeight <= 0) {
+    //     smoke.className = smoke.className.replace(
+    //       'hidden',
+    //       'fade-in'
+    //     );
+    //     smoke.autoplay = true;
+    //     smoke.playbackRate = 1.5;
+    //   }
       var positionFromTop = logo.getBoundingClientRect().top;
       if (positionFromTop - windowHeight <= 0) {
         logo.className = logo.className.replace(
