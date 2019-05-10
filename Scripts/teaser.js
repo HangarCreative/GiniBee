@@ -30,6 +30,10 @@ document.getElementsByTagName("BODY")[0].onresize = function(){buttonFunc()};
 //   }
 // }
 
+function stopScroll() {
+  document.body.classList.add("noScroll");
+}
+
 function buttonFunc(){
   if(screen.width > 767){
     button1.disabled = true;
