@@ -75,20 +75,20 @@
     <button id="buttonDown" onclick="smoothScroll(document.getElementById('info'))"><img id="buttonImage" src="Assets/down-arrow.png" alt="down arrow"></i></button>
     <div class="lightbox-target text-center" id="img1">
       <img src="Assets/med-brin-lipaNew.png"/>
-      <a class="lightbox-close" href="#info1"></a>
+      <a class="lightbox-close" onclick="document.body.classList.toggle('noScroll');" href="#info1"></a>
     </div>
     <div class="lightbox-target text-center" id="img2">
       <img src="Assets/gini-silver-V2.png"/>
-      <a class="lightbox-close" href="#info2"></a>
+      <a class="lightbox-close" onclick="document.body.classList.toggle('noScroll');" href="#info2"></a>
     </div>
     <div class="lightbox-target text-center" id="img3">
       <img src="Assets/gin-tonic2.png"/>
-      <a class="lightbox-close" href="#info3"></a>
+      <a class="lightbox-close" onclick="document.body.classList.toggle('noScroll');" href="#info3"></a>
     </div>
     <div id="info" class="container-fluid d-flex flex-column align-items-center">
       <div class="row justify-content-center text-center">
           <div class="col-8 col-xl-3 mt-5">
-            <a class="lightbox" href="#img1">
+            <a class="lightbox" onclick="document.body.classList.toggle('noScroll');" href="#img1">
               <img id="info1" class="hidden"  src="Assets/med-brin-lipaNew.png" alt="med,brin in lipa">
             </a>
             <p class="infoText hidden">
@@ -100,7 +100,7 @@
             <button id="buttonDown2" onclick="smoothScroll(document.getElementById('info2'))"><img id="buttonImage2" src="Assets/down-arrow.png" alt="down arrow"></i></button>
           </div>
           <div class="col-8 col-xl-3 mt-5">
-            <a class="lightbox" href="#img2">
+            <a class="lightbox" onclick="document.body.classList.toggle('noScroll');" href="#img2">
               <img id="info2" class="hidden" src="Assets/gini-silver-V2.png" alt="premium gin">
             </a>
             <p class="infoText hidden">
@@ -112,7 +112,7 @@
             <button id="buttonDown3" onclick="smoothScroll(document.getElementById('info3'))"><img id="buttonImage3" src="Assets/down-arrow.png" alt="down arrow"></i></button>
           </div>
           <div class="col-8 col-xl-3 mt-5">
-            <a class="lightbox" href="#img3">
+            <a class="lightbox" onclick="document.body.classList.toggle('noScroll');" href="#img3">
               <img id="info3" class="hidden" src="Assets/gin-tonic2.png" alt="gin tonic v kozarcu">
             </a>
             <p class="infoText hidden">
