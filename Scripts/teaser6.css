@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'GiniFont';
+  src: url('../Assets/optiagency-gothic-webfont.woff2') format('woff2'),
+       url('../Assets/optiagency-gothic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+  animation-play-state: paused !important;
+}
+
+html,body{
+  height:100%;
+  overflow: hidden;
+  background-color: #191919;
+  /* max-width: 100%;
+  overflow-x: hidden; */
+}
+
+#siteform {
+  height: 100%;
+}
+
+object {
+  width: 100%;
+  min-height: 100%;
+}
+
+
+
+
+

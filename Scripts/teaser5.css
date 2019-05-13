@@ -247,7 +247,36 @@ body {
   -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
 }
 
-#bee1 {
+#beeFly {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 0px;
+  margin-left: 250x;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  object-fit: cover;
+  max-width: 100%;
+  height: 50px;
+  opacity: 0;
+  /* animation:  */
+  animation-name: beeFlyAnim;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+    /* safari animation */
+  -webkit-animation-name: beeFlyAnim;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-fill-mode: backwards;
+  -webkit-animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/* #bee1 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -259,23 +288,23 @@ body {
   object-fit: cover;
   max-width: 100%;
   height: 50px;
-  /* animation */
-  /* will-change: opacity; */
+  animation 
+  will-change: opacity;
   animation-name: bee11Anim, bee12Anim;
   animation-duration: 1.5s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1), cubic-bezier(0.33, 1.4, 0.45, 0.63);
-    /* safari animation */
+    safari animation
   -webkit-animation-name: bee11Anim, bee12Anim;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 2s;
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1), cubic-bezier(0.33, 1.4, 0.45, 0.63);
-}
+} */
 
 
-#bee2 {
+/* #bee2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -287,20 +316,20 @@ body {
   object-fit: cover;
   max-width: 100%;
   height: 50px;
-  /* animation */
-  /* will-change: opacity; */
+  animation 
+  will-change: opacity; 
   animation-name: bee21Anim, bee22Anim;
   animation-duration: 1.5s;
   animation-delay: 2.1s;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(0.76, 0.46, 0.55, 0.97), cubic-bezier( 0.28, 0.73, 0.93, 0.98);
-    /* safari animation */
+  safari animation
   -webkit-animation-name: bee21Anim, bee22Anim;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-delay: 2.1s;
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-timing-function: cubic-bezier(0.76, 0.46, 0.55, 0.97), cubic-bezier( 0.28, 0.73, 0.93, 0.98);
-}
+} */
 
 .space {
   width: 20px;
@@ -908,6 +937,116 @@ h1 span:nth-child(18) {
   }
   100% {
     margin-top: 200px;
+  }
+}
+
+@keyframes beeFlyAnim{
+  0% {
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: -8;
+    transform: rotate(60deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  23% {
+    z-index: -8;
+    transform: rotate(60deg);
+  }
+  25% {
+    margin-top: -100px;
+    margin-left: 250px;
+    z-index: 6;
+  }
+  27% {
+    transform: rotate(-60deg);
+  }
+  48% {
+    transform: rotate(-60deg);
+  }
+  50%{
+    margin-top: -200px;
+    margin-left: 0px;
+  }
+  52% {
+    transform: rotate(-120deg);
+  }
+  73% {
+    z-index: 6;
+    transform: rotate(-120deg);
+  }
+  75% {
+    margin-top: -100px;
+    margin-left: -250px;
+    z-index: -8;
+  }
+  77% {
+    transform: rotate(-240deg);
+  }
+  98% {
+    transform: rotate(-240deg);
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: -8;
+  }
+}
+
+@-webkit-keyframes beeFlyAnim{
+  0% {
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: -8;
+    -webkit-transform: rotate(60deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  23% {
+    z-index: -8;
+    -webkit-transform: rotate(60deg);
+  }
+  25% {
+    margin-top: -100px;
+    margin-left: 250px;
+    z-index: 6;
+  }
+  27% {
+    -webkit-transform: rotate(-60deg);
+  }
+  48% {
+    -webkit-transform: rotate(-60deg);
+  }
+  50%{
+    margin-top: -200px;
+    margin-left: 0px;
+  }
+  52% {
+    -webkit-transform: rotate(-120deg);
+  }
+  73% {
+    z-index: 6;
+    -webkit-transform: rotate(-120deg);
+  }
+  75% {
+    margin-top: -100px;
+    margin-left: -250px;
+    z-index: -8;
+  }
+  77% {
+    -webkit-transform: rotate(-240deg);
+  }
+  98% {
+    -webkit-transform: rotate(-240deg);
+    opacity: 1;
+  }
+  100% {
+    margin-top: 0px;
+    margin-left: 0px;
+    z-index: -8;
   }
 }
 
