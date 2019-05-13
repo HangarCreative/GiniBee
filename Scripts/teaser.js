@@ -47,29 +47,30 @@ function buttonFunc(){
     button2.style.opacity = "1";
   }
 }
-window.smoothScroll = function(target) {
-  var scrollContainer = target;
-  do { //find scroll container
-      scrollContainer = scrollContainer.parentNode;
-      if (!scrollContainer) return;
-      scrollContainer.scrollTop += 1;
-  } while (scrollContainer.scrollTop == 0);
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $(".smoothBut").on('click', function(event) {
 
-  var targetY = 0;
-  do { //find the top of target relatively to the container
-      if (target == scrollContainer) break;
-      targetY += target.offsetTop;
-  } while (target = target.offsetParent);
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-  scroll = function(c, a, b, i) {
-      i++; if (i > 30) return;
-      c.scrollTop = a + (b - a) / 30 * i;
-      setTimeout(function(){ scroll(c, a, b, i); }, 25);
-  }
-  // start scrolling
-  scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-}
+      // Store hash
+      var hash = this.hash;
 
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1200, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
 var animateHTML = function() {
   var elems;
   var windowHeight;
@@ -156,21 +157,29 @@ $(function() {
         // Set the message text.
         $(successMessage).text(response);
         // Clear the form.
-        $('#formName').val('');
+        $('#formFName').val('');
+        $('#formLName').val('');
         $('#formEmail').val('');
         $('#formPhone').val('');
         $('#formCompany').val('');
         $('#formMessage').val('');
+        $(formFnameError).text('');
+        $(formLnameError).text('');
+        $(formEmailError).text('');
+        $(formMessageError).text('');
       }).fail(function(data) {
+        var jsonRet = data.responseText;
+        var jsonObject= eval('('+jsonRet+')');
         // Make sure that the successMessage div has the 'error' class.
         $(successMessage).removeClass('success');
         $(successMessage).addClass('error');
-        // Set the message text.
-        if (data.responseText !== '') {
-            $(successMessage).text(data.responseText);
-        } else {
-            $(successMessage).text('Oops! An error occured and your message could not be sent.');
-        }
+        // Set the error messages.
+        $(successMessage).text(jsonObject.success);
+        $(formFnameError).text(jsonObject.Fname);
+        $(formLnameError).text(jsonObject.Lname);
+        $(formEmailError).text(jsonObject.email);
+        $(formMessageError).text(jsonObject.message);
+        // $(successMessage).text('Oops! Prišlo je do napake in sporočilo ni bilo poslano.');
     });
   });
 });

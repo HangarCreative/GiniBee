@@ -72,7 +72,7 @@
         </div>
       </div>
     </div>
-    <button id="buttonDown" onclick="smoothScroll(document.getElementById('info'))"><img id="buttonImage" src="Assets/down-arrow.png" alt="down arrow"></i></button>
+    <a id="buttonDown" class="smoothBut" href="#info"><img id="buttonImage" src="Assets/down-arrow.png" alt="down arrow"></i></a>
     <div class="lightbox-target text-center" id="img1">
       <img src="Assets/med-brin-lipaNew.png"/>
       <a class="lightbox-close" onclick="document.body.classList.toggle('noScroll');" href="#info1"></a>
@@ -97,7 +97,7 @@
               GiniBee gin <span id="bold">Premium</span> in <span id="bold">Unique</span> se ponašata s svojim posebnim okusom, saj je vsaka šesta brinjeva jagoda namocena v med slovenskih čebel. 
               Poleg medu s svojo prisotnostjo dajejo GiniBee ginu poetsko noto tudi lipov list, vrtnica, ingver, pomaranca, kumara, limona in koriander. 
             </p>
-            <button id="buttonDown2" onclick="smoothScroll(document.getElementById('info2'))"><img id="buttonImage2" src="Assets/down-arrow.png" alt="down arrow"></i></button>
+            <a id="buttonDown2" class="smoothBut" href="#info2"><img id="buttonImage2" src="Assets/down-arrow.png" alt="down arrow"></i></a>
           </div>
           <div class="col-8 col-xl-3 mt-5">
             <a class="lightbox" onclick="document.body.classList.toggle('noScroll');" href="#img2">
@@ -109,7 +109,7 @@
               ki si želijo le najboljše. Prav tako je po mnenju svetovnih poznavalcev in ocenjevalcev eden izmed 
               redkih ginov, ki za uživanje ne potrebujejo tonika. 
             </p>
-            <button id="buttonDown3" onclick="smoothScroll(document.getElementById('info3'))"><img id="buttonImage3" src="Assets/down-arrow.png" alt="down arrow"></i></button>
+            <a id="buttonDown3" class="smoothBut" href="#info3"><img id="buttonImage3" src="Assets/down-arrow.png" alt="down arrow"></i></a>
           </div>
           <div class="col-8 col-xl-3 mt-5">
             <a class="lightbox" onclick="document.body.classList.toggle('noScroll');" href="#img3">
@@ -134,36 +134,53 @@
       </div>
     <div class="container">
       <div class="row justify-content-center">
-        <div class="col-12 col-md-5 order-2 order-md-1 hidden">
+        <div class="col-11 col-md-5 order-2 order-md-1 hidden">
             <!-- php include('form.php') $_SERVER['PHP_SELF']; ?>' -->
-            <!-- <span id="successMessage" class="success"></span> -->
             <!-- action="form.php" -->
           <form id="obrazec" method="post">
-              <div class="form-group">
-                <label for="formName">Ime in priimek*</label>
-                <input type="text" name="name" class="form-control" id="formName" placeholder="Janez Novak">
-                <!-- <span class="error"><?= $name_error ?></span> -->
+            <div class="form-row">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="formFName">Ime*</label>
+                  <input type="text" name="Fname" class="form-control" id="formFName">
+                  <span id="formFnameError" class="error"></span>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="fromMail">Email*</label>
-                <input type="text" name="email" class="form-control" id="formEmail" placeholder="primer@email.com">
-                <!-- <span class="error"><?= $email_error ?></span> -->
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="formLName">Priimek*</label>
+                  <input type="text" name="Lname" class="form-control" id="formLName">
+                  <span id="formLnameError" class="error"></span>
+                </div>
               </div>
-              <div class="form-group">
-                <label for="formPhone">Telefon*</label>
-                <input type="text" name="phone" class="form-control" id="formPhone" placeholder="041 567 891">
-                <!-- <span class="error"><?= $phone_error ?></span> -->
+            </div>
+            <div class="form-row">
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="fromMail">Email*</label>
+                  <input type="text" name="email" class="form-control" id="formEmail">
+                  <span id="formEmailError" class="error"></span>
+                </div>
               </div>
+              <div class="col-12 col-md-6">
+                <div class="form-group">
+                  <label for="formPhone">Telefon</label>
+                  <input type="text" name="phone" class="form-control" id="formPhone">
+                </div>
+              </div>
+            </div>
               <div class="form-group">
                 <label for="formCompany">Podjete</label>
-                <input type="text" name="company" class="form-control" id="formCompany" placeholder="Ime podjetja">
+                <input type="text" name="company" class="form-control" id="formCompany">
               </div>
               <div class="form-group">
                 <label for="formMessage">Sporočilo*</label>
-                <textarea type="text" name="message" class="form-control" id="formMessage" placeholder="Tukaj napišeste sporočilo..."></textarea>
+                <textarea type="text" name="message" class="form-control" id="formMessage"></textarea>
+                <span id="formMessageError" class="error"></span>
               </div>
-              <p><label for="formInfo">Okenca z * so obvezna</label></p>
+              <p><label for="formInfo">Polja označena z * so obvezna</label></p>
               <button id="formSubmit" name="submit" type="submit" id="contact-submit" data-submit="...Pošiljam" class="btn btn-danger">Pošlji</button>
+              <!-- <span id="successMessage" class="success"></span> -->
           </form>
         </div>
         <div class="col-12 col-md-5 text-center order-1 order-md-2 hidden">
@@ -183,9 +200,8 @@
     </div>
     <div id="footer" class="container-fluid d-flex flex-column">
         <div class="row justify-content-center align-items-center h-100 mt-xl-5">
-            <!-- <div class="col-12">
-              <img id="GLogo" src="Assets/ginibee-red-V2.png" alt="Gin Logo Red">
-            </div> -->
+            <div id="footerPad" class="col-12">
+            </div>
             <div class="col-12 col-md-3 order-2 order-md-1">
                 <p class="m-0">RADO MULEJ</p>
                 <p class="m-0">CEO</p>

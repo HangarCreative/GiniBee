@@ -121,26 +121,26 @@
           <form id="obrazec" action="<?= $_SERVER['PHP_SELF'] ?>" method="post">
               <div class="form-group">
                 <label for="formName">Ime*</label>
-                <input type="text" name="name" value="<?= $name ?>" class="form-control" id="formNameIn" placeholder="Janez Novak">
+                <input type="text" name="name" value="<?= $name ?>" class="form-control" id="formNameIn">
                 <span class="error"><?= $name_error ?></span>
               </div>
               <div class="form-group">
                 <label for="fromMail">Email*</label>
-                <input type="text" name="email" value="<?= $email ?>"  class="form-control" id="formEmailIn" placeholder="primer@email.com">
+                <input type="text" name="email" value="<?= $email ?>"  class="form-control" id="formEmailIn">
                 <span class="error"><?= $email_error ?></span>
               </div>
               <div class="form-group">
                 <label for="formPhone">Telefon*</label>
-                <input type="text" name="phone" value="<?= $phone ?>" class="form-control" id="formPhoneIn" placeholder="041 567 891">
+                <input type="text" name="phone" value="<?= $phone ?>" class="form-control" id="formPhoneIn">
                 <span class="error"><?= $phone_error ?></span>
               </div>
               <div class="form-group">
                 <label for="formCompany">Podjete</label>
-                <input type="text" name="company" value="<?= $company ?>" class="form-control" id="formCompanyIn" placeholder="Ime podjetja">
+                <input type="text" name="company" value="<?= $company ?>" class="form-control" id="formCompanyIn">
               </div>
               <div class="form-group">
                 <label for="formMessage">Sporočilo</label>
-                <textarea type="text" name="message" value="<?= $message ?>" class="form-control" id="formMessageIn" placeholder="Tukaj napišeste sporočilo..."></textarea>
+                <textarea type="text" name="message" value="<?= $message ?>" class="form-control" id="formMessageIn"></textarea>
               </div>
               <p><label for="formInfo">Okenca z * so obvezna</label></p>
               <button id="formSubmit" name="submit" type="submit" id="contact-submit" data-submit="...Pošiljam" class="btn btn-danger">Pošlji</button>
