@@ -247,7 +247,7 @@ body {
   -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
 }
 
-#beeFly {
+/* #beeFly {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -259,22 +259,22 @@ body {
   object-fit: cover;
   max-width: 100%;
   height: 60px;
-  opacity: 1;
-  /* animation:  */
+  opacity: 0;
+  /* animation:  
   animation-name: beeFlyAnimX, beeFlyAnimY;
   animation-duration: 6s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
   animation-timing-function: cubic-bezier(.59,.17,.43,.91), ease-in;
   animation-iteration-count: infinite;
-    /* safari animation */
+    /* safari animation 
   -webkit-animation-name: beeFlyAnimX, beeFlyAnimY;
   -webkit-animation-duration: 6s;
   -webkit-animation-delay: 2s;
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-timing-function: cubic-bezier(.59,.17,.43,.91), ease-in;
   animation-iteration-count: infinite;
-}
+} */
 
 #bee1 {
   position: absolute;
@@ -988,6 +988,9 @@ h1 span:nth-child(18) {
     margin-top: -150px;
     z-index: -8;
   }
+  1% {
+    opacity: 1;
+  }
   15% {
     margin-top: -120px;
   }
@@ -1020,6 +1023,7 @@ h1 span:nth-child(18) {
   100% {
     margin-top: -150px;
     z-index: -8;
+    opacity: 1;
   }
 }
 
