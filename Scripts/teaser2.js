@@ -8,7 +8,7 @@
 //   }
 // });
 
-function errorSite(){
+function errorySite(){
     $(".error").html('Niste dovol stari za vstop');
 }
 
