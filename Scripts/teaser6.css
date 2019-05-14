@@ -71,12 +71,12 @@ hr {
 }
 
 .hide-element-on-keyboard {
-  z-index: 1;
+  opacity: 1;
 }
 
 @media screen and (min-height: 300px) {
   .hide-element-on-keyboard {
-      z-index: -1;
+    opacity: 0;
   }
 }
 
