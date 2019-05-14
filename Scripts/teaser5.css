@@ -259,20 +259,20 @@ body {
   object-fit: cover;
   max-width: 100%;
   height: 60px;
-  opacity: 0;
+  opacity: 1;
   /* animation:  */
-  animation-name: beeFlyAnim;
-  animation-duration: 4s;
+  animation-name: beeFlyAnimX, beeFlyAnimY;
+  animation-duration: 6s;
   animation-delay: 2s;
   animation-fill-mode: backwards;
-  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(.59,.17,.43,.91), ease-in;
   animation-iteration-count: infinite;
     /* safari animation */
-  -webkit-animation-name: beeFlyAnim;
-  -webkit-animation-duration: 4s;
+  -webkit-animation-name: beeFlyAnimX, beeFlyAnimY;
+  -webkit-animation-duration: 6s;
   -webkit-animation-delay: 2s;
   -webkit-animation-fill-mode: backwards;
-  -webkit-animation-timing-function: linear;
+  -webkit-animation-timing-function: cubic-bezier(.59,.17,.43,.91), ease-in;
   animation-iteration-count: infinite;
 }
 
@@ -280,11 +280,13 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -240px;
-  margin-left: 120px;
+  margin-top: -280px;
+  margin-left: 100px;
   z-index: 2;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
   object-fit: cover;
   max-width: 100%;
   height: 60px;
@@ -310,10 +312,10 @@ body {
   top: 50%;
   left: 50%;
   margin-top: 200px;
-  margin-left: -150px;
+  margin-left: -250px;
   z-index: 6;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(25deg);
+  -webkit-transform: translate(-50%, -50%) rotate(25deg);
   object-fit: cover;
   max-width: 100%;
   height: 60px;
@@ -942,112 +944,81 @@ h1 span:nth-child(18) {
   }
 }
 
-@keyframes beeFlyAnim{
+@keyframes beeFlyAnimX{
   0% {
-    margin-top: 0px;
     margin-left: 0px;
     z-index: -8;
-    transform: rotate(60deg);
+    transform: rotate(100deg);
   }
-  5% {
-    opacity: 1;
-  }
-  23% {
+  15% {
     z-index: -8;
-    transform: rotate(60deg);
+    transform: rotate(100deg);
   }
-  25% {
-    margin-top: -100px;
-    margin-left: 250px;
+  25%{
+    margin-left: 230px;
     z-index: 6;
   }
-  27% {
-    transform: rotate(-60deg);
+  40% {
+    transform: rotate(290deg);
   }
-  48% {
-    transform: rotate(-60deg);
-  }
-  50%{
-    margin-top: -200px;
+  /* 50%{
     margin-left: 0px;
+  } */
+  65% {
+    transform: rotate(290deg);
   }
-  52% {
-    transform: rotate(-120deg);
-  }
-  73% {
-    z-index: 6;
-    transform: rotate(-120deg);
-  }
-  75% {
-    margin-top: -100px;
+  75%{
     margin-left: -250px;
+    z-index: 6;
+  }
+  76% {
     z-index: -8;
   }
-  77% {
-    transform: rotate(-240deg);
-  }
-  98% {
-    transform: rotate(-240deg);
-    opacity: 1;
+  85% {
+    transform: rotate(450deg);
   }
   100% {
-    margin-top: 0px;
     margin-left: 0px;
     z-index: -8;
   }
 }
 
-@-webkit-keyframes beeFlyAnim{
+@keyframes beeFlyAnimY{
   0% {
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: -150px;
     z-index: -8;
-    -webkit-transform: rotate(60deg);
   }
-  5% {
-    opacity: 1;
+  15% {
+    margin-top: -120px;
   }
-  23% {
+  24% {
     z-index: -8;
-    -webkit-transform: rotate(60deg);
   }
-  25% {
+  25%{
     margin-top: -100px;
-    margin-left: 250px;
     z-index: 6;
   }
-  27% {
-    -webkit-transform: rotate(-60deg);
+  30% {
+    margin-top: -90px;
   }
-  48% {
-    -webkit-transform: rotate(-60deg);
+  40% {
+    margin-top: -130px;
   }
-  50%{
+  55% {
+    margin-top: -150px;
+  }
+  /* 50%{
+    margin-top: -150px;
+  } */
+  75%{
     margin-top: -200px;
-    margin-left: 0px;
-  }
-  52% {
-    -webkit-transform: rotate(-120deg);
-  }
-  73% {
     z-index: 6;
-    -webkit-transform: rotate(-120deg);
   }
-  75% {
-    margin-top: -100px;
-    margin-left: -250px;
+  76% {
     z-index: -8;
-  }
-  77% {
-    -webkit-transform: rotate(-240deg);
-  }
-  98% {
-    -webkit-transform: rotate(-240deg);
-    opacity: 1;
   }
   100% {
-    margin-top: 0px;
-    margin-left: 0px;
+    margin-top: -150px;
     z-index: -8;
   }
 }
