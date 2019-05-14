@@ -9,12 +9,5 @@ $(document).keypress(function(event){
 });
 
 function enterSite(){
-  var input = $("#myAge").val();
-  if(input === ""){
-    $(".error").html("Prosim vnesite starost");
-  }else if(input >= 18){
     $("#siteform").html('<object data="index12.html"/>');
-  }else{
-    $(".error").html("Niste dovolj stari");
-  }
 }
