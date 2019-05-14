@@ -1,10 +1,5 @@
 
 
-$(document).ready(function() {
-  // Animate loader off screen
-  $(".se-pre-con").fadeOut("slow");
-  });
-
 // var anim = document.getElementById("anim");
 var button1 = document.getElementById("buttonDown2");
 var button2 = document.getElementById("buttonDown3");
