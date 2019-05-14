@@ -30,6 +30,39 @@ object {
   min-height: 100%;
 }
 
+.askText1, .askText2{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.askText2{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.input-group {
+  width: 10rem;
+}
+
+hr {
+  border-top: 1px solid 	#AD2544;
+}
+
+.opozorilo {
+  font-size: 1rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.error{
+  color: red;
+  font-weight: bold;
+  font-size: 2rem;
+}
 
 
 
