@@ -9,7 +9,7 @@
 // });
 
 function errorySite(){
-    $(".error").html('Niste dovol stari za vstop');
+    $(".error").html("Niste dovol stari za vstop");
 }
 
 function enterSite(){
