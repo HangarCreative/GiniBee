@@ -11,6 +11,7 @@
 .js-loading *:before,
 .js-loading *:after {
   animation-play-state: paused !important;
+  -webkit-animation-play-state: paused !important;
 }
 
 html,body{
@@ -829,6 +830,7 @@ h1 span:nth-child(18) {
 	height: 100%;
 	z-index: 9999;
   background: url(../Assets/Loader-V2.gif) center no-repeat #191919;
+  -webkit-background: url(../Assets/Loader-V2.gif) center no-repeat #191919;
 }
 
 /* ------------------------------------------------------------------------------------------------------ */

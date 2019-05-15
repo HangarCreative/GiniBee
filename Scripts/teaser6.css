@@ -11,11 +11,13 @@
 .js-loading *:before,
 .js-loading *:after {
   animation-play-state: paused !important;
+  -webkit-animation-play-state: paused !important;
 }
 
 html,body{
   height:100%;
   overflow: hidden;
+  -webkit-overflow-scrolling: touch; /*may brake stuff*/
   background-color: #191919;
   /* max-width: 100%;
   overflow-x: hidden; */
