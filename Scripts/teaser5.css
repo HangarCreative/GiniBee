@@ -42,12 +42,30 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 2.5s;
   animation-timing-function: linear;
-    /* safari animation */
+  /* safari animation */
   -webkit-animation-name: logoAnim;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-delay: 2.5s;
   -webkit-animation-timing-function: linear;
+  /* moz animation */
+  -moz-animation-name: logoAnim;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 2.5s;
+  -moz-animation-timing-function: linear;
+  /* o animation */
+  -o-animation-name: logoAnim;
+  -o-animation-duration: 1.5s;
+  -o-animation-fill-mode: forwards;
+  -o-animation-delay: 2.5s;
+  -o-animation-timing-function: linear;
+  /* ms animation */
+  -ms-animation-name: logoAnim;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-delay: 2.5s;
+  -ms-animation-timing-function: linear;
 }
 
 #giniLogo {
@@ -63,6 +81,7 @@ body {
   -webkit-transform: scale(-0.9) scaleY(-1);
   -ms-transform: scale(-0.9) scaleY(-1);
   -moz-transform: scale(-0.9) scaleY(-1);
+  -o-transform: scale(-0.9) scaleY(-1);
 }
 
 #bzzz {
@@ -77,6 +96,7 @@ body {
   -webkit-transform: scale(0.4);
   -ms-transform: scale(0.4);
   -moz-transform: scale(0.4);
+  -o-transform: scale(0.4);
   /* max-width: 100%;
   overflow-x: hidden; */
 }
@@ -112,6 +132,24 @@ body {
   -webkit-animation-timing-function: linear, linear;
   -webkit-animation-delay: 5s, 9.5s;
   -webkit-animation-fill-mode: forwards, forwards;
+  /* moz animation */
+  -moz-animation-name: startVid, endVid;
+  -moz-animation-duration: 0.5s, 0.5s;
+  -moz-animation-timing-function: linear, linear;
+  -moz-animation-delay: 5s, 9.5s;
+  -moz-animation-fill-mode: forwards, forwards;
+  /* ms animation */
+  -ms-animation-name: startVid, endVid;
+  -ms-animation-duration: 0.5s, 0.5s;
+  -ms-animation-timing-function: linear, linear;
+  -ms-animation-delay: 5s, 9.5s;
+  -ms-animation-fill-mode: forwards, forwards;
+  /* o animation */
+  -o-animation-name: startVid, endVid;
+  -o-animation-duration: 0.5s, 0.5s;
+  -o-animation-timing-function: linear, linear;
+  -o-animation-delay: 5s, 9.5s;
+  -o-animation-fill-mode: forwards, forwards;
 }
 
 #animCol {
@@ -129,6 +167,9 @@ body {
   height: auto;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   /* animation */
   /* will-change: opacity; */
   animation-name: brinBotAnim;
@@ -136,7 +177,25 @@ body {
   animation-delay: 1.5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-out;
-    /* safari animation */
+  /* moz animation */
+  -moz-animation-name: brinBotAnim;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-timing-function: ease-out;
+  /* ms animation */
+  -ms-animation-name: brinBotAnim;
+  -ms-animation-duration: 2s;
+  -ms-animation-delay: 1.5s;
+  -ms-animation-fill-mode: backwards;
+  -ms-animation-timing-function: ease-out;
+  /* o animation */
+  -o-animation-name: brinBotAnim;
+  -o-animation-duration: 2s;
+  -o-animation-delay: 1.5s;
+  -o-animation-fill-mode: backwards;
+  -o-animation-timing-function: ease-out;
+  /* safari animation */
   -webkit-animation-name: brinBotAnim;
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 1.5s;
@@ -152,6 +211,9 @@ body {
   margin-top: 40px;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   object-fit: cover;
   max-width: 540px;
   height: auto;
@@ -168,6 +230,24 @@ body {
   -webkit-animation-delay: 1.5s;
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-timing-function: ease-out;
+    /* safari animation */
+  -ms-animation-name: brinTopAnim;
+  -ms-animation-duration: 2s;
+  -ms-animation-delay: 1.5s;
+  -ms-animation-fill-mode: backwards;
+  -ms-animation-timing-function: ease-out;
+    /* safari animation */
+  -moz-animation-name: brinTopAnim;
+  -moz-animation-duration: 2s;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-timing-function: ease-out;
+    /* safari animation */
+  -o-animation-name: brinTopAnim;
+  -o-animation-duration: 2s;
+  -o-animation-delay: 1.5s;
+  -o-animation-fill-mode: backwards;
+  -o-animation-timing-function: ease-out;
 }
 
 #tonic {
@@ -178,6 +258,9 @@ body {
   z-index: -1;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   object-fit: cover;
   max-width: 400px;
   height: 540px;
@@ -194,6 +277,24 @@ body {
   -webkit-animation-fill-mode: backwards;
   /* -webkit-animation-delay: 1s; */
   -webkit-animation-timing-function: ease-out;
+    /* moz animation */
+  -moz-animation-name: tonicAnim;
+  -moz-animation-duration: 2.5s;
+  -moz-animation-fill-mode: backwards;
+  /* -moz-animation-delay: 1s; */
+  -moz-animation-timing-function: ease-out;
+    /* ms animation */
+  -ms-animation-name: tonicAnim;
+  -ms-animation-duration: 2.5s;
+  -ms-animation-fill-mode: backwards;
+  /* -ms-animation-delay: 1s; */
+  -ms-animation-timing-function: ease-out;
+    /* o animation */
+  -o-animation-name: tonicAnim;
+  -o-animation-duration: 2.5s;
+  -o-animation-fill-mode: backwards;
+  /* -o-animation-delay: 1s; */
+  -o-animation-timing-function: ease-out;
 }
 
 #ginStd {
@@ -205,6 +306,9 @@ body {
   z-index: -3;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   object-fit: cover;
   max-width: 400px;
   height: 740px;
@@ -221,6 +325,24 @@ body {
   -webkit-animation-delay: 0.8s;
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-timing-function: ease-out;
+    /* o animation */
+  -o-animation-name: ginStdAnim;
+  -o-animation-duration: 1.5s;
+  -o-animation-delay: 0.8s;
+  -o-animation-fill-mode: backwards;
+  -o-animation-timing-function: ease-out;
+    /* ms animation */
+  -ms-animation-name: ginStdAnim;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-delay: 0.8s;
+  -ms-animation-fill-mode: backwards;
+  -ms-animation-timing-function: ease-out;
+    /* moz animation */
+  -moz-animation-name: ginStdAnim;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-delay: 0.8s;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-timing-function: ease-out;
 }
 
 #ginPrm {
@@ -232,6 +354,9 @@ body {
   z-index: -2;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   object-fit: cover;
   max-width: 400px;
   height: 740px;
@@ -248,6 +373,24 @@ body {
   -webkit-animation-delay: 0.8s;
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    /* ms animation */
+  -ms-animation-name: ginPrmAnim;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-delay: 0.8s;
+  -ms-animation-fill-mode: backwards;
+  -ms-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    /* moz animation */
+  -moz-animation-name: ginPrmAnim;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-delay: 0.8s;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
+    /* o animation */
+  -o-animation-name: ginPrmAnim;
+  -o-animation-duration: 1.5s;
+  -o-animation-delay: 0.8s;
+  -o-animation-fill-mode: backwards;
+  -o-animation-timing-function: cubic-bezier(0.02, 0.01, 0.21, 1);
 }
 
 /* #beeFly {
@@ -288,8 +431,14 @@ body {
   z-index: 2;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
   object-fit: cover;
   max-width: 100%;
   height: 60px;
@@ -307,6 +456,24 @@ body {
   -webkit-animation-delay: 2.1s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
+  /* moz animation */
+  -moz-animation-name: logoAnim;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-delay: 2.1s;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-timing-function: ease-out;
+  /* ms animation */
+  -ms-animation-name: logoAnim;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-delay: 2.1s;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: ease-out;
+  /* o animation */
+  -o-animation-name: logoAnim;
+  -o-animation-duration: 1.5s;
+  -o-animation-delay: 2.1s;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: ease-out;
 }
 
 
@@ -319,6 +486,9 @@ body {
   z-index: 6;
   transform: translate(-50%, -50%) rotate(25deg);
   -webkit-transform: translate(-50%, -50%) rotate(25deg);
+  -moz-transform: translate(-50%, -50%) rotate(25deg);
+  -ms-transform: translate(-50%, -50%) rotate(25deg);
+  -o-transform: translate(-50%, -50%) rotate(25deg);
   object-fit: cover;
   max-width: 100%;
   height: 60px;
@@ -336,6 +506,24 @@ body {
   -webkit-animation-delay: 2.1s;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-out;
+  /* moz animation */
+  -moz-animation-name: logoAnim;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-delay: 2.1s;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-timing-function: ease-out;
+  /* ms animation */
+  -ms-animation-name: logoAnim;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-delay: 2.1s;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: ease-out;
+  /* o animation */
+  -o-animation-name: logoAnim;
+  -o-animation-duration: 1.5s;
+  -o-animation-delay: 2.1s;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: ease-out;
 }
 
 .space {
@@ -368,6 +556,10 @@ h1 span {
   opacity: 0;
   display: inline-block;
   animation: animate 1s linear forwards;
+  -webkit-animation: animate 1s linear forwards;
+  -moz-animation: animate 1s linear forwards;
+  -ms-animation: animate 1s linear forwards;
+  -o-animation: animate 1s linear forwards;
 }
 
 
@@ -377,6 +569,9 @@ h1 span {
   bottom: 0;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   background-color: #191919;
   margin-top: -100px;
   border: none;
@@ -392,6 +587,24 @@ h1 span {
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-delay: 10s;
   -webkit-animation-timing-function: linear;
+    /* o animation */
+  -o-animation-name: logoAnim;
+  -o-animation-duration: 1.5s;
+  -o-animation-fill-mode: backwards;
+  -o-animation-delay: 10s;
+  -o-animation-timing-function: linear;
+    /* ms animation */
+  -ms-animation-name: logoAnim;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-fill-mode: backwards;
+  -ms-animation-delay: 10s;
+  -ms-animation-timing-function: linear;
+    /* moz animation */
+  -moz-animation-name: logoAnim;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-delay: 10s;
+  -moz-animation-timing-function: linear;
 }
 
 #buttonDown2, #buttonDown3 {
@@ -400,6 +613,9 @@ h1 span {
   bottom: -5%;
   transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
   background-color: #191919;
   margin-top: 0;
   border: none;
@@ -439,6 +655,24 @@ h1 span {
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-delay: 0.5s;
   -webkit-animation-timing-function: linear;
+    /* moz animation */
+  -moz-animation-name: logoAnim;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-timing-function: linear;
+    /* ms animation */
+  -ms-animation-name: logoAnim;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-fill-mode: backwards;
+  -ms-animation-delay: 0.5s;
+  -ms-animation-timing-function: linear;
+    /* o animation */
+  -o-animation-name: logoAnim;
+  -o-animation-duration: 1.5s;
+  -o-animation-fill-mode: backwards;
+  -o-animation-delay: 0.5s;
+  -o-animation-timing-function: linear;
 }
 
 .fade-in2 {
@@ -453,6 +687,24 @@ h1 span {
   -webkit-animation-fill-mode: backwards;
   -webkit-animation-delay: 1.5s;
   -webkit-animation-timing-function: linear;
+    /* ms animation */
+  -ms-animation-name: logoAnim;
+  -ms-animation-duration: 2.5s;
+  -ms-animation-fill-mode: backwards;
+  -ms-animation-delay: 1.5s;
+  -ms-animation-timing-function: linear;
+    /* moz animation */
+  -moz-animation-name: logoAnim;
+  -moz-animation-duration: 2.5s;
+  -moz-animation-fill-mode: backwards;
+  -moz-animation-delay: 1.5s;
+  -moz-animation-timing-function: linear;
+    /* o animation */
+  -o-animation-name: logoAnim;
+  -o-animation-duration: 2.5s;
+  -o-animation-fill-mode: backwards;
+  -o-animation-delay: 1.5s;
+  -o-animation-timing-function: linear;
 }
 
 .infoText {
@@ -1360,6 +1612,24 @@ h1 span:nth-child(18) {
     -webkit-animation-timing-function: linear;
     -webkit-animation-delay: 2.5s;
     -webkit-animation-fill-mode: forwards;
+    /* moz animations */
+    -moz-animation-name: logoAnim;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-delay: 2.5s;
+    -moz-animation-fill-mode: forwards;
+    /* ms animations */
+    -ms-animation-name: logoAnim;
+    -ms-animation-duration: 1.5s;
+    -ms-animation-timing-function: linear;
+    -ms-animation-delay: 2.5s;
+    -ms-animation-fill-mode: forwards;
+    /* o animations */
+    -o-animation-name: logoAnim;
+    -o-animation-duration: 1.5s;
+    -o-animation-timing-function: linear;
+    -o-animation-delay: 2.5s;
+    -o-animation-fill-mode: forwards;
   }
 
   #animCol {
