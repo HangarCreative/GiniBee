@@ -58,6 +58,7 @@ body {
 #beeLogo {
   height: 0;
   opacity: 0;
+  z-index: 2;
   transform: scale(-0.9) scaleY(-1);
   -webkit-transform: scale(-0.9) scaleY(-1);
   -ms-transform: scale(-0.9) scaleY(-1);
@@ -66,6 +67,7 @@ body {
 
 #bzzz {
   max-width: 100%;
+  z-index: 5;
   height: 340px;
 }
 
