@@ -101,7 +101,7 @@ body {
 #bzzz {
   max-width: 100%;
   z-index: 5;
-  height: 340px;
+  height: 300px;
 }
 
 #anim {
@@ -1753,7 +1753,7 @@ h1 span:nth-child(18) {
   }
 
   #bzzz{
-    height: 300px;
+    height: 200px;
   }
 
   #logoCol {
@@ -1886,7 +1886,7 @@ h1 span:nth-child(18) {
   }
 
   #bzzz{
-    height: 250px;
+    height: 150px;
   }
 
   #smokeCol {
@@ -1909,7 +1909,7 @@ h1 span:nth-child(18) {
   }
 
   #bzzz{
-    height: 250px;
+    height: 150px;
   }
 
   #smokeCol {
@@ -1926,7 +1926,7 @@ h1 span:nth-child(18) {
   }
 
   #bzzz{
-    height: 250px;
+    height: 150px;
   }
 
   #smokeCol {
