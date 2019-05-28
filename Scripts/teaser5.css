@@ -88,9 +88,11 @@ body {
 }
 
 #beeLogo {
+  position: absolute;
   height: 0;
-  opacity: 0;
+  opacity: 1;
   z-index: 2;
+  margin-top: 25rem;
   transform: scale(-0.9) scaleY(-1);
   -webkit-transform: scale(-0.9) scaleY(-1);
   -ms-transform: scale(-0.9) scaleY(-1);
@@ -101,7 +103,7 @@ body {
 #bzzz {
   max-width: 100%;
   z-index: 5;
-  height: 300px;
+  height: 200px;
 }
 
 #anim {
@@ -641,7 +643,7 @@ h1 span {
 
 
 #info {
-  margin-top: 100px;
+  margin-top: 300px;
 }
 
 #info1, #info2, #info3 {
@@ -1652,7 +1654,13 @@ h1 span:nth-child(18) {
     -moz-transform: scale(0.9);
   }
 
+  #bzzz{
+    height: 300px;
+  }
+
   #beeLogo {
+    position: relative;
+    margin-top: 0;
     height: 100%;
     opacity: 0;
     /* animation */
@@ -1817,6 +1825,10 @@ h1 span:nth-child(18) {
     margin-top: -320px;
   }
 
+  #bzzz{
+    height: 300px;
+  }
+
   h1 span {
     font-size: 6rem;
   }
@@ -1886,7 +1898,7 @@ h1 span:nth-child(18) {
   }
 
   #bzzz{
-    height: 150px;
+    height: 200px;
   }
 
   #smokeCol {
@@ -1898,6 +1910,7 @@ h1 span:nth-child(18) {
   #smokeCol {
     margin-top: -360px;
   }
+
 }
 
 @media (min-width: 1600px) and (max-height: 830px){
@@ -1909,7 +1922,7 @@ h1 span:nth-child(18) {
   }
 
   #bzzz{
-    height: 150px;
+    height: 200px;
   }
 
   #smokeCol {
@@ -1925,11 +1938,26 @@ h1 span:nth-child(18) {
     -moz-transform: scale(0.7);
   }
 
-  #bzzz{
-    height: 150px;
+  #bzzz {
+    height: 200px;
   }
 
   #smokeCol {
     margin-top: -250px;
   }
 }
+
+@media (max-width: 500px) and (min-height: 700px){
+
+  #beeLogo {
+    margin-top: 28rem;
+  }
+}
+
+@media (max-width: 500px) and (min-height: 800px){
+
+  #beeLogo {
+    margin-top: 30rem;
+  }
+}
+
