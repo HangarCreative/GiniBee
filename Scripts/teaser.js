@@ -8,6 +8,15 @@ buttonFunc();
 // myFunction();
 // animateBee();
 document.getElementsByTagName("BODY")[0].onresize = function(){buttonFunc()};
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (window.pageYOffset > 10) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 // function animateBee(){
   // if(screen.width < 992){

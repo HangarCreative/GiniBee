@@ -34,6 +34,17 @@ body {
   background-attachment: fixed;
 }
 
+.navbar-brand img {
+  width: 200px;
+  height: auto;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+  top: -80px;
+  transition: top 0.3s;
+}
+
 #logoCol {
   opacity: 0;
   /* animation */
