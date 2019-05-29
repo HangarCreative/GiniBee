@@ -177,7 +177,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 200px;
+  margin-top: 250px;
   z-index: 0;
   object-fit: cover;
   max-width: 510px;
@@ -225,7 +225,7 @@ body {
   top: 50%;
   left: 50%;
   z-index: -4;
-  margin-top: 40px;
+  margin-top: 90px;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -498,7 +498,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: 200px;
+  margin-top: 250px;
   margin-left: -280px;
   z-index: 6;
   transform: translate(-50%, -50%) rotate(25deg);
@@ -1156,15 +1156,15 @@ h1 span:nth-child(18) {
 }
 
 @keyframes brinBotAnim {
-  0% {opacity: 0; margin-top: 250px;}
+  0% {opacity: 0; margin-top: 300px;}
   50% {opacity: 1;}
-  100% {margin-top: 200px;}
+  100% {margin-top: 250px;}
 }
 
 @keyframes brinTopAnim {
-  0% {opacity: 0; margin-top: 90px;}
+  0% {opacity: 0; margin-top: 140px;}
   50% {opacity: 1;}
-  100% {margin-top: 40px;}
+  100% {margin-top: 90px;}
 }
 
 @keyframes animate {
