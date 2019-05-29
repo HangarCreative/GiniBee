@@ -1977,3 +1977,24 @@ h1 span:nth-child(18) {
   }
 }
 
+@media (min-width: 768px) and (min-height: 900px){
+  
+  #beeLogo {
+    margin-top: 35rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-height: 900px){
+
+  #beeLogo {
+    margin-top: 40rem;
+  }
+}
+
+@media (min-width: 1025px) and (min-height: 901px){
+
+  #beeLogo {
+    margin-top: 0;
+  }
+}
+
