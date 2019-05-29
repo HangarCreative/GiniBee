@@ -92,7 +92,7 @@ body {
   height: 0;
   opacity: 1;
   z-index: 2;
-  margin-top: 23rem;
+  margin-top: 20rem;
   left: -1rem;
   transform: scale(-0.9) scaleY(-1);
   -webkit-transform: scale(-0.9) scaleY(-1);
@@ -1946,6 +1946,13 @@ h1 span:nth-child(18) {
 
   #smokeCol {
     margin-top: -250px;
+  }
+}
+
+@media (max-width: 500px) and (min-height: 500px){
+
+  #beeLogo {
+    margin-top: 23rem;
   }
 }
 
