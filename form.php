@@ -65,7 +65,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $message_body .= "Podjetje: $company\n\n";
         $message_body .= "Sporočilo: \n$message\n";
 
-        $to = 'alen2herceg@gmail.com';
+        $to = 'rado.mulej@ginibeegin.com';
         $subject = "Novi kontakt od $Fname $Lname";
         $header = "FROM: $Fname $Lname <$email>";
         if(mail($to, $subject, $message_body, $header)){

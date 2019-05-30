@@ -18,7 +18,7 @@ if (!regex.test(userAgent)){ //Test to see if Human
     if( get_cookie( 'GiniAgeCheck') == null){
       
     }else{
-      $("#siteform").html('<object data="index12.html"/>');
+      $("#siteform").html('<object data="landingPage.html"/>');
     }
 }
 
@@ -56,5 +56,5 @@ function errorySite(){
 
 function enterSite(){
   create_cookie("GiniAgeCheck","true",1);
-  $("#siteform").html('<object data="index12.html"/>');
+  $("#siteform").html('<object data="landingPage.html"/>');
 }
